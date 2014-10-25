@@ -2,8 +2,44 @@
 layout: default
 title: Home
 keyword: index
+
+speakers: 
+  - name: Propaganda
+    img: propaganda.jpg
+    bio: He is a cool dude!
+    url: http://google.com
+  - name: Propaganda
+    img: propaganda.jpg
+    bio: He is a cool dude!
+    url: http://google.com
+  - name: Propaganda
+    img: propaganda.jpg
+    bio: He is a cool dude!
+    url: http://google.com
+  - name: Propaganda
+    img: propaganda.jpg
+    bio: He is a cool dude!
+    url: http://google.com
+  - name: Propaganda
+    img: propaganda.jpg
+    bio: He is a cool dude!
+    url: http://google.com
+  - name: Propaganda
+    img: propaganda.jpg
+    bio: He is a cool dude!
+    url: http://google.com
+
+
 ---
 
-
-<!-- Add your site or application content here -->
-<p>Hello world! This is HTML5 Boilerplate.</p>
+<section class="people-section img-section">
+	<div class="section-inner">
+		<div class="page">
+		{% for person in page.speakers %}
+			<div class="person">
+				<img src="img/people/{{person.img}}">
+			</div>
+		{% endfor %}
+		</div>
+	</div>
+</section>

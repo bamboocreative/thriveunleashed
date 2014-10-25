@@ -3,6 +3,7 @@ title: Thrive Unleashed
 tagline: Youth Conference
 url: "http://unleashed.thriveconferences.com" # the base hostname & protocol for your site
 
+
 # Social
 socialimg:
 facebook:
@@ -15,11 +16,10 @@ instagram:
 phone: 
 email:
 
-
 # Build settings
 markdown: kramdown
 sass:
   sass_dir: scss
   style: :compressed
   
-exclude: [scss, README.md, node_modules, gruntfile.js, package.json]
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

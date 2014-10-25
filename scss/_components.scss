@@ -1,0 +1,51 @@
+// Buttons
+button, a.button, input[type="submit"], .read-more{
+	
+	padding: .5em 1em;
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: -.2px;
+	font-family: $head-font-family;
+	border: 2px solid $primary-color !important;
+	color: $primary-color;
+	font-weight: 600;
+	
+	@include transition(.3s background, .2s color);
+	
+	&:hover{
+		background: $primary-color;
+		color: #fff;
+	}
+}
+
+.people-section{
+	//background-image: url('../img/head-left.jpg');
+	text-align: center;
+	
+	
+	.section-inner{
+		//background: rgba($pink, 0.8);
+		padding: 40px 0;
+		font-size: 0px;
+	}
+	
+	.person{
+		display: inline-block;
+		max-width: 250px;
+		padding: 1em;
+		font-size: $font-size;
+		
+		img{
+			border-radius: 100%;
+			border: 5px solid;
+		}
+		
+		&:nth-child(1){img{border-color: $blue}}
+		&:nth-child(2){img{border-color: $green1}}
+		&:nth-child(3){img{border-color: $yellow}}
+		&:nth-child(4){img{border-color: $orange}}
+		&:nth-child(5){img{border-color: $red}}
+		&:nth-child(6){img{border-color: $green2}}
+	}
+}
