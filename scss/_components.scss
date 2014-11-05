@@ -161,6 +161,16 @@ button, a.button, input[type="submit"]{
 	}
 }
 
+
+.promo{
+	padding-top: 3em;
+	text-align: center;
+	.button{
+		font-size: 1.7em;
+		padding-top: .6em;
+	}
+}
+
 .footer-register{
 	display: block;
 	background: $gray;
