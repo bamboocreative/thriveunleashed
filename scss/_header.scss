@@ -20,7 +20,7 @@ header.header{
 		}
 		
 		@include media(max-width 415px){
-			font-size: 3em;
+			font-size: 3.5em;
 			margin-bottom: 10px;
 		}
 		
@@ -47,7 +47,7 @@ header.header{
 		text-transform: uppercase;
 		
 		@include media(max-width 415px){
-			font-size: 1.3em;
+			// font-size: 1.3em;
 		}
 		
 	}
