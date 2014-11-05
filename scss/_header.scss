@@ -4,12 +4,26 @@ header.header{
 	text-align: center;
 	z-index: 2;
 	padding: 5em 0;
-		
+	
+	@include media(max-width 415px){
+		padding: 2em 0 5em;
+	}
+	
 	.logo{
 		color: #fff;
-		font-size: 6em;
 		text-decoration: none;
+		font-size: 6em;
 		line-height: 1em;
+		
+		@include media(max-width $mamabear){
+			font-size: 4em;
+		}
+		
+		@include media(max-width 415px){
+			font-size: 3em;
+			margin-bottom: 10px;
+		}
+		
 	}
 	
 	.page{
@@ -31,6 +45,11 @@ header.header{
 		font-size: 1.7em;
 		margin-bottom: 1em;
 		text-transform: uppercase;
+		
+		@include media(max-width 415px){
+			font-size: 1.3em;
+		}
+		
 	}
 	/* nav.site-nav{
 		display: inline-block;
@@ -53,7 +72,13 @@ header.header{
 }
 
 .head-section{
+	
 	background-image: url('../img/unleashed_bg1000.jpg');
+	
+	@include media(max-width $mamabear){
+		background-image: url('../img/head-rightpoint5x.jpg');
+		background-attachment: scroll;
+	}
 	
 	.section-inner{
 		background: rgba(black, 0.5);
@@ -64,6 +89,14 @@ header.header{
 		position: absolute;
 		right: 10px;
 		bottom: 10px;
+		
+		@include media(max-width 415px){
+			width: 150px;
+			right: 50%;
+			margin-right: -75px;
+			bottom: 20px;
+		}
+		
 	}
 	
 }

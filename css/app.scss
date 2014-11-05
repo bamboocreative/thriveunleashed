@@ -37,11 +37,12 @@ $yellow: #fff100;
 $orange: #f9a755;
 $red: #ed654b;
 $blue: #00adef;
-
+$gray: #3c3d3c;
 
 // Some Style Variables and what not
 $primary-color: $red;
 $secondary-color: $pink;
+$primary-gray: $gray;
 $border: 1px solid #ccc;
 $error: #de3535;
 $success: #d5f5d7;
@@ -114,7 +115,7 @@ html,body{
 	&:after{
 		content: "";
 		display: block;
-		height: 3.5em;
+		height: 6em;
 	}
 	
 }
