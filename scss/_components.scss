@@ -167,7 +167,13 @@ button, a.button, input[type="submit"]{
 	text-align: center;
 	.button{
 		font-size: 1.7em;
-		padding-top: .6em;
+		padding-top: .65em;
+		text-align: center;
+		
+		.icon-uniE602{
+			font-size: 1.5em;
+		}
+		
 	}
 }
 
