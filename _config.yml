@@ -5,7 +5,7 @@ url: "http://unleashed.thriveconferences.com" # the base hostname & protocol for
 
 
 # Social
-socialimg: social.jpg
+socialimg: /img/social.jpg
 facebook:
 twitter:
 github:
