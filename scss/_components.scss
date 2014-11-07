@@ -1,0 +1,207 @@
+// Buttons
+button, a.button, input[type="submit"]{
+	
+	padding: .5em 1em;
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: -.2px;
+	font-family: $head-font-family;
+	border: 2px solid $primary-color !important;
+	color: $primary-color;
+	font-weight: 600;
+	
+	@include transition(.3s background, .2s color);
+	
+	&:hover{
+		background: $primary-color;
+		color: #fff;
+	}
+}
+
+.people-section{
+	//background-image: url('../img/head-left.jpg');
+	text-align: center;
+	
+	
+	.section-inner{
+		//background: rgba($pink, 0.8);
+		padding: 40px 0;
+		font-size: 0px;
+	}
+	
+	.person{
+		display: inline-block;
+		max-width: 300px;
+		padding: 1em;
+		font-size: $font-size;
+		
+		img{
+			border-radius: 100%;
+			border: 8px solid;
+		}
+		
+		&:nth-child(1){img{border-color: $blue}}
+		&:nth-child(2){img{border-color: $green1}}
+		&:nth-child(3){img{border-color: $yellow}}
+		&:nth-child(4){img{border-color: $orange}}
+		&:nth-child(5){img{border-color: $red}}
+		&:nth-child(6){img{border-color: $green2}}
+		&:nth-child(7){img{border-color: $blue}}
+		&:nth-child(8){img{border-color: $green1}}
+		&:nth-child(9){img{border-color: $yellow}}
+		&:nth-child(10){img{border-color: $orange}}
+		&:nth-child(11){img{border-color: $red}}
+		&:nth-child(12){img{border-color: $green2}}
+		
+		
+		.name{
+			display: block;
+			position: relative;
+			z-index: 2;
+			font-family: $head-font-family;
+			font-size: 1.2em;
+			background: $primary-gray;
+			color: #fff;
+			text-transform: uppercase;
+			padding: .3em .2em .15em;
+			margin-top: -30px;
+		}
+		
+		.bio{
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.schedule-section{
+	background-image: url('../img/head-left.jpg');
+	
+	@include media(max-width $mamabear){ 
+		background-image: none !important;
+	}
+	
+	
+	.section-inner{
+		background: rgba($pink, 0.9);
+		padding: 4em 0;
+	}
+	
+	.page{
+		margin-bottom: 0;
+	}
+	
+	h2{
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+		background: $gray;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 19px 0 15px;
+		line-height: 1em;
+	}
+	
+	.schedule-inner{
+		@include outer-container;
+	}
+	
+	.friday, .saturday{
+		@include media($mamabear){@include span-columns(6);}
+		@include media(max-width $mamabear){
+			margin-bottom: 20px;
+			td{
+				width: 50%;
+			}
+		}
+		background: $green2;
+	}
+	
+	table{
+		width: 100%;
+		
+		tr{
+			&:nth-child(1){background: $blue; td:nth-child(2){border-color: darken($blue, 10%)}}
+			&:nth-child(2){background: $green1; td:nth-child(2){border-color: darken($green1, 10%)}}
+			&:nth-child(3){background: $orange; td:nth-child(2){border-color: darken($orange, 10%)}}
+			&:nth-child(4){background: $red; td:nth-child(2){border-color: darken($red, 10%)}}
+			&:nth-child(5){background: $green2; td:nth-child(2){border-color: darken($green2, 10%)}}
+			&:nth-child(6){background: $blue; td:nth-child(2){border-color: darken($blue, 10%)}}
+			&:nth-child(7){background: $green1; td:nth-child(2){border-color: darken($green1, 10%)}}
+			&:nth-child(8){background: $orange; td:nth-child(2){border-color: darken($orange, 10%)}}
+			&:nth-child(9){background: $red; td:nth-child(2){border-color: darken($red, 10%)}}
+			&:nth-child(10){background: $green2; td:nth-child(2){border-color: darken($green2, 10%)}}
+			
+			
+		}
+		
+		td{
+			padding: 20px 20px;
+			
+			
+			&:first-child{
+				text-align: right;
+			}
+			
+			&:nth-child(2){
+				border-left: 5px solid;
+			}
+			
+			
+			p{
+				margin-bottom: 0;
+				margin-top: 0;
+				color: #fff;
+				font-weight: 600;
+				line-height: 1.1em;
+			}
+			
+		}
+		
+	}
+}
+
+
+.promo{
+	padding-top: 3em;
+	text-align: center;
+	.button{
+		font-size: 1.7em;
+		padding-top: .65em;
+		text-align: center;
+		
+		.icon-uniE602{
+			font-size: 1.5em;
+		}
+		
+	}
+}
+
+.footer-register{
+	display: block;
+	background: $gray;
+	text-transform: uppercase;
+	padding: 1.5em 0;
+	text-align: center;
+	font-size: 4em;
+	font-family: $head-font-family;
+	text-decoration: none;
+	
+	@include transition(.3s background, .2s color);
+	
+	&:hover{
+		background: $primary-color;
+		color: #fff;
+	}
+	
+	.page{
+		margin-bottom: 0px;
+	}
+	
+}
+
+footer{
+	.page{
+		margin-bottom: 0;
+	}
+}

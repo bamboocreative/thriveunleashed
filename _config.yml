@@ -1,0 +1,25 @@
+# Site settings
+title: Thrive Unleashed
+tagline: Youth Conference
+url: "http://unleashed.thriveconferences.com" # the base hostname & protocol for your site
+
+
+# Social
+socialimg:
+facebook:
+twitter:
+github:
+googleplus:
+instagram:
+
+# Contact
+phone: 
+email:
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: scss
+  style: :compressed
+  
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
