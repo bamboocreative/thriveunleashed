@@ -90,6 +90,7 @@ button, a.button, input[type="submit"]{
 	
 	@include media(max-width $mamabear){
 		font-size: 1.8em;
+		background-image: none !important;
 	}
 	
 	.section-inner{
