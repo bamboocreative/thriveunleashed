@@ -203,7 +203,7 @@ sponsorlevels:
 		<div class="sponsor-levels">
 		{% for level in page.sponsorlevels %}
 			<div class="sponsor-level">
-				<a class="sponsor-head" href="javascript:void(0)"><h3>{{ level.title }} - <span class="price">{{ level.price }}</span> <span class="expand">+</span><span class="contract">--</span> </h3></a>
+				<a class="sponsor-head" href="javascript:void(0)"><h3>{{ level.title }}</span> <span class="expand">+</span><span class="contract">--</span> </h3></a>
 				<ul>
 					{% for item in level.items %}
 						<li>{{item.perk}}</li>
