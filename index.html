@@ -35,7 +35,10 @@ speakers:
     bio: Internationally-acclaimed worship leader.
     url: https://twitter.com/lincolnbrewster
     readmore: "@lincolnbrewster"
-    
+  - name: Thrive Worship Band
+    img: thrive.jpg
+    url: https://twitter.com/thrivetweets
+    readmore: "@thrivetweets"
 friday:
   - time: 6:00pm
     title: Check-in begins
@@ -49,7 +52,6 @@ friday:
     title: Break
   - time: 11:00pm - 12:00am
     title: After Party
-  
 saturday:
   - time: 9:00-11:00am
     title: Session 2
@@ -64,14 +66,70 @@ saturday:
   - time: "&nbsp;"
     title: "&nbsp;"
     
+sponsorlevels:
+  - title: Platinum Partner Sponsor
+    price: $15,000
+    items:
+      - perk: Premium courtyard booth location
+      - perk: Double truck ad in conference workbook
+      - perk: Inclusion on Thrive Conference website
+      - perk: Brand logo on sponsor page in conference workbook
+      - perk: Brand slide shown on conference screens (pre-session)
+      - perk: Product giveaway promotion from stage
+      - perk: 6 VIP conference passes.
+      - perk: Two 30 second radio sponsorship placement spots on KFIA 710 Daily Thrive Radio show
+      - perk: 1 Hour exclusive one on one leadership session with Pastor Ray Johnston
+  - title: Participating Sponsor
+    price: $8,000
+    items:
+      - perk: Premium courtyard booth location
+      - perk: Full page ad in conference workbook
+      - perk: Inclusion on Thrive Conference website
+      - perk: Brand logo on sponsor page in conference workbook
+      - perk: Brand slide shown on conference screens (pre-session)
+      - perk: Product giveaway promotionfrom stage
+      - perk: 5 VIP conference passes  
+  - title: Bag Sponsor
+    price: $7,500
+    items:
+      - perk: Company logo printed on bag
+      - perk: Sponsor provided bag insert in bag
+      - perk: 1 exhibit booth space
+      - perk: 2 conference passes
+  - title: Partner Sponsor
+    price: $4,000
+    items:
+      - perk: Courtyard booth location
+      - perk: Full page ad in conference workbook
+      - perk: Inclusion on Thrive Conference website
+      - perk: Brand logo on sponsor page inconference workbook
+      - perk: Brand slide shown on conference screens (pre-session)
+      - perk: 2 Thrive Conference passes
+  - title: Name Badge Sponsor
+    price: $4000
+    items:
+      - perk: Logo Printed on name badge
+      - perk: 1 sponsor provided bag insert
+      - perk: 2 conference passes
+  - title: Bonus Session Lunch Sponsor
+    price: $2000
+    items:
+      - perk: Banner with brand logo at lunch location
+      - perk: Booth inside lunch location (during lunch only)
+      - perk: Brand logo on sponsor page in conference workbook
+      - perk: Highlighted mention at lunch from stage
+      - perk: Option to add inside booth space – $1000
+      - perk: 1 conference pass
+  - title: Exhibiting Sponsor
+    price: $1,500 - $2,500
+    items:
+      - perk: Booth location inside/courtyard
+      - perk: Inclusion on Thrive Conference website
+      - perk: Brand logo on sponsor page in conference workbook
+      - perk: 1 Thrive conference pass
+
 ---
-<!--
-  - name: Thrive Worship Band
-    img: thrive.jpg
-    bio: Dynamic, soulful, experimental, and clever hip hop, all focused on the heart of a person.
-    url: http://google.com
-    readmore: "@propaganda"
--->
+
 
 <section class="tagline-section img-section">
 	<div class="section-inner">
@@ -136,5 +194,24 @@ saturday:
 	<div class="page">
 		<h2 class="section-title">For Leaders</h2>
 		<p><a href="img/Thrive_Unleashed_Promo.zip" class="button"><i class="icon-uniE602"></i> PROMO RESOURCES</a></p>
+	</div>
+</section>
+<section class="sponsor">
+	<div class="page">
+		<h2 class="section-title">Sponsorship</h2>
+		<p class="sponsorship-opp">For Sponsorship Opportunities, contact <a href="mailto:steveb@baysideonline.com?subject=Thrive Unleashed 2015 Sponsorship">Steve Batz</a>.</p>
+		<div class="sponsor-levels">
+		{% for level in page.sponsorlevels %}
+			<div class="sponsor-level">
+				<a class="sponsor-head" href="javascript:void(0)"><h3>{{ level.title }} - <span class="price">{{ level.price }}</span> <span class="expand">+</span><span class="contract">--</span> </h3></a>
+				<ul>
+					{% for item in level.items %}
+						<li>{{item.perk}}</li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% cycle '', '</div><div class="sponsor-levels">' %}
+		{% endfor %}
+		</div>
 	</div>
 </section>

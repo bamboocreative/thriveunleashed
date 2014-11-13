@@ -225,6 +225,108 @@ button, a.button, input[type="submit"]{
 	}
 }
 
+.sponsor{
+	padding-top: 5em;
+	padding-bottom: 2em;
+	text-align: center;	
+	border-bottom: 1px solid $gray;
+	
+	.sponsor-levels{
+		@include outer-container;
+	}
+	
+	.sponsor-level{
+		text-align: left;
+		font-size: .8em;
+		
+		@include media($mamabear){@include span-columns(6);}
+		
+		&.active{
+			ul{
+				height: auto !important;
+			}
+			
+			.expand{
+				display: none !important;
+			}
+			
+			.contract{
+				display: inline-block !important;
+			}
+			
+			ul{
+				margin-bottom: 2em;
+			}
+			
+		}
+		
+		
+		.sponsor-head{
+			background: $primary-gray;
+			color: #fff;
+			display: block;
+			width: 100%;
+			text-decoration: none;
+			
+			@include transition(.3s background);
+			
+			&:hover{
+				background: $red;
+				.price{
+					color: #fff;
+				}
+			}
+			
+			.expand, .contract{
+				font-size: 2em;
+				float: right;
+				display: inline-block;
+				line-height: 1px;
+				position: relative;
+				
+				margin-top: 15px;
+				margin-right: -10px;
+				
+				@include media(max-width $mamabear){
+					margin-top: 10px;
+				}
+				
+			}
+			
+			.contract{
+				display: none;
+				top: -5px;
+				left: -3px;
+			}
+			
+			h3{
+				padding: .7em 1em .5em;
+				margin: 0;
+			}
+			
+			.price{
+				color: $primary-color;
+				@include transition(.3s color);
+			}
+			
+		}
+		
+		ul{
+			height: 0px;
+			padding-left: 20px;
+			overflow: hidden;
+			margin-bottom: .3em;
+			li{
+				font-size: .8em;
+			}
+		}
+	}
+}
+
+.sponsorship-opp{
+	margin-bottom: 3em;
+}
+
 .footer-register{
 	display: block;
 	background: $gray;
