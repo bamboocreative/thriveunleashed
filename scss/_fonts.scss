@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?l8mbeq');
-	src:url('fonts/icomoon.eot?#iefixl8mbeq') format('embedded-opentype'),
-		url('fonts/icomoon.woff?l8mbeq') format('woff'),
-		url('fonts/icomoon.ttf?l8mbeq') format('truetype'),
-		url('fonts/icomoon.svg?l8mbeq#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-dsny1v');
+	src:url('fonts/icomoon.eot?#iefix-dsny1v') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-dsny1v') format('woff'),
+		url('fonts/icomoon.ttf?-dsny1v') format('truetype'),
+		url('fonts/icomoon.svg?-dsny1v#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-snapchat:before {
+	content: "\e606";
+}
+.icon-unleashed:before {
+	content: "\e600";
+}
 .icon-uniE605:before {
 	content: "\e605";
 }
@@ -37,7 +43,4 @@
 }
 .icon-uniE602:before {
 	content: "\e602";
-}
-.icon-unleashed:before {
-	content: "\e600";
 }
