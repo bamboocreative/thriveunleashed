@@ -1,11 +1,11 @@
 # Site settings
 title: Thrive Unleashed
-tagline: Youth Conference
-url: "http://unleashed.thriveconferences.com" # the base hostname & protocol for your site
+tagline: Stand together, Be transformed, Make a difference... Now
+url: "http://unleashed.thriveconference.org" # the base hostname & protocol for your site
 
 
 # Social
-socialimg:
+socialimg: /img/social.jpg
 facebook:
 twitter:
 github:

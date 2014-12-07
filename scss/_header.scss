@@ -3,10 +3,10 @@ header.header{
 	top: 0;
 	text-align: center;
 	z-index: 2;
-	padding: 5em 0;
+	padding: 5em 0 3em;
 	
 	@include media(max-width 415px){
-		padding: 2em 0 5em;
+		padding: 2em 0 3em;
 	}
 	
 	.logo{
@@ -43,7 +43,6 @@ header.header{
 		font-family: $head-font-family;
 		color: $primary-color;
 		font-size: 1.7em;
-		margin-bottom: 1em;
 		text-transform: uppercase;
 		
 		@include media(max-width 415px){
@@ -99,4 +98,10 @@ header.header{
 		
 	}
 	
+}
+
+.header-tag{
+	color: #fff;
+	margin: 2em 0;
+	font-size: 1.4em;
 }
