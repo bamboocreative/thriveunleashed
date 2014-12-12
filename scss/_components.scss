@@ -280,7 +280,11 @@ button, a.button, input[type="submit"]{
 		font-size: 2em;
 		text-align: center;
 		margin-top: 2em;
-
+        
+        &:active{
+            background-color: $primary-color;
+        }
+        
 		@include media(max-width $mamabear){
     		@include span-columns(10 of 12);
     		@include shift(1);
