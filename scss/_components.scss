@@ -225,6 +225,10 @@ button, a.button, input[type="submit"]{
             text-align: center;
             font-size: 3.5em;
             margin: 0.5em 0em;
+            
+            @include media(max-width $mamabear){
+                    font-size: 2em;
+                }
 		
 		}
 		
