@@ -524,3 +524,31 @@ footer{
         color: $primary-color;
     }
 }
+.section-new{
+	background-image: url('../img/thrive-2016.jpg');
+	color: #fff;
+	text-align: center;
+	font-size: 3em;
+	@include media(max-width $mamabear){ 
+		background-image: none !important;
+		font-size: 2em;
+	}	
+	.section-inner{
+		background: rgba($gray, 0.85);
+		padding: 2em 0em;
+	}
+	
+	.head{
+    	font-size: 1.3em;
+    	font-weight: 100;
+    	line-height: 1em;
+	}
+	.details{
+    	font-size: 0.7em;
+    	}	
+	.page{
+		margin-bottom: 0;
+		text-align: center;
+		color: white;
+	}
+}
