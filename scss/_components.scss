@@ -46,20 +46,21 @@ button, a.button, input[type="submit"]{
 		img{
 			border-radius: 100%;
 			border: 8px solid;
+			border-color: $primary-color;
 		}
 		
-		&:nth-child(1){img{border-color: $blue}}
-		&:nth-child(2){img{border-color: $green1}}
-		&:nth-child(3){img{border-color: $yellow}}
-		&:nth-child(4){img{border-color: $orange}}
-		&:nth-child(5){img{border-color: $red}}
-		&:nth-child(6){img{border-color: $green2}}
-		&:nth-child(7){img{border-color: $blue}}
-		&:nth-child(8){img{border-color: $green1}}
-		&:nth-child(9){img{border-color: $yellow}}
-		&:nth-child(10){img{border-color: $orange}}
-		&:nth-child(11){img{border-color: $red}}
-		&:nth-child(12){img{border-color: $green2}}
+		// &:nth-child(1){img{border-color: $blue}}
+		// &:nth-child(2){img{border-color: $green1}}
+		// &:nth-child(3){img{border-color: $yellow}}
+		// &:nth-child(4){img{border-color: $orange}}
+		// &:nth-child(5){img{border-color: $red}}
+		// &:nth-child(6){img{border-color: $green2}}
+		// &:nth-child(7){img{border-color: $blue}}
+		// &:nth-child(8){img{border-color: $green1}}
+		// &:nth-child(9){img{border-color: $yellow}}
+		// &:nth-child(10){img{border-color: $orange}}
+		// &:nth-child(11){img{border-color: $red}}
+		// &:nth-child(12){img{border-color: $green2}}
 		
 		
 		.name{
