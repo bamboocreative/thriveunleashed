@@ -15,16 +15,16 @@ speakers:
     bio: Internationally-acclaimed worship leader.
     url: https://twitter.com/lincolnbrewster
     readmore: "@lincolnbrewster"
-  - name: Thrive Worship Band
-    img: thrive.jpg
-    bio: The energetic Thrive band you know and love.
-    url: https://twitter.com/thrivetweets
-    readmore: "@thrivetweets"
   - name: Albert Tate
     img: albert.jpg
     bio: A 15 year veteran who has taught and served in numerous pastoral leadership positions.
     url: https://twitter.com/alberttate
     readmore: "@alberttate"
+  - name: Thrive Worship Band
+    img: thrive.jpg
+    bio: The energetic Thrive band you know and love.
+    url: https://twitter.com/thrivetweets
+    readmore: "@thrivetweets"
 friday:
   - time: 6:00pm
     title: Check-in begins
@@ -146,8 +146,7 @@ sponsorlevels:
 			<div class="person">
 				<img title="{{person.name}} - Bio Photo" alt="{{person.name}} - Bio Photo" src="img/people/{{person.img}}">
 				<span class="name">{{person.name}}</span>
-				<p class="bio">{{person.bio}}</p>
-				<a target="_blank" class="read-more" href="{{person.url}}">{{person.readmore}}</a>
+				<p class="bio">{{person.bio}} <br><a target="_blank" class="read-more" href="{{person.url}}">{{person.readmore}}</a></p>
 			</div>
 		{% endfor %}
 		</div>
