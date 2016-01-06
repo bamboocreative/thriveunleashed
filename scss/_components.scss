@@ -98,17 +98,19 @@ button, a.button, input[type="submit"] {
             text-transform: uppercase;
             padding: .3em .2em .15em;
             margin-top: -30px;
+            border-radius: 4px;
         }
 
         .bio {
             margin-bottom: 0px;
         }
 
-        &:last-of-type {
-            @include media(min-width $mamabear) {
-                @include shift(4);
-            }
-        }
+        // &:last-of-type {
+        //     @include media(min-width $mamabear) {
+        //         @include shift(4);
+        //     }
+        // }
+   
     }
 }
 
@@ -706,5 +708,25 @@ footer {
         margin-bottom: 0;
         text-align: center;
         color: white;
+    }
+}
+
+.thebutton {
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+
+    @include transition(all 0.2s ease-in-out);
+
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    &:active {
+           color: white;
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
     }
 }
