@@ -192,83 +192,19 @@ button, a.button, input[type="submit"] {
         width: 100%;
 
         tr {
-            &:nth-child(1) {
-                background: $blue;
+            &:nth-child(even) {
+                background: $gray;
 
                 td:nth-child(2) {
-                    border-color: darken($blue, 10%);
+                    border-color: lighten($gray, 10%);
                 }
             }
 
-            &:nth-child(2) {
-                background: $green1;
+            &:nth-child(odd) {
+                background: lighten($gray, 20%);
 
                 td:nth-child(2) {
-                    border-color: darken($green1, 10%);
-                }
-            }
-
-            &:nth-child(3) {
-                background: $orange;
-
-                td:nth-child(2) {
-                    border-color: darken($orange, 10%);
-                }
-            }
-
-            &:nth-child(4) {
-                background: $red;
-
-                td:nth-child(2) {
-                    border-color: darken($red, 10%);
-                }
-            }
-
-            &:nth-child(5) {
-                background: $green2;
-
-                td:nth-child(2) {
-                    border-color: darken($green2, 10%);
-                }
-            }
-
-            &:nth-child(6) {
-                background: $blue;
-
-                td:nth-child(2) {
-                    border-color: darken($blue, 10%);
-                }
-            }
-
-            &:nth-child(7) {
-                background: $green1;
-
-                td:nth-child(2) {
-                    border-color: darken($green1, 10%);
-                }
-            }
-
-            &:nth-child(8) {
-                background: $orange;
-
-                td:nth-child(2) {
-                    border-color: darken($orange, 10%);
-                }
-            }
-
-            &:nth-child(9) {
-                background: $red;
-
-                td:nth-child(2) {
-                    border-color: darken($red, 10%);
-                }
-            }
-
-            &:nth-child(10) {
-                background: $green2;
-
-                td:nth-child(2) {
-                    border-color: darken($green2, 10%);
+                    border-color: lighten($gray, 25%);
                 }
             }
         }
@@ -725,7 +661,7 @@ footer {
     }
 
     &:active {
-           color: white;
+        color: white;
         background-color: darken($primary-color, 10%);
         border-color: darken($primary-color, 10%);
     }
