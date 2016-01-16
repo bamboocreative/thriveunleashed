@@ -1,10 +1,13 @@
 ---
 layout: default
 title: Home
+
+liveStream: false
+
 keyword: index
 fulltitle: "Thrive Unleashed | January 15 - 16, 2016"
 
-register: https://www.eventbrite.com/e/thrive-unleashed-2016-tickets-17970687811
+register: https://www.eventbrite.com/e/thrive-unleashed-2017-tickets-20824275970
 volunteer: https://www.volunteerspot.com/login/entry/638591254017
 
 speakers: 
@@ -172,11 +175,22 @@ sponsorlevels:
       - perk: 1 Thrive conference pass
 
 ---
+{% if page.liveStream  %}
+	<div class="video-wrap-outer">
+		<h2>Thrive Unleashed LIVE</h2>
+		<div class="video-wrap">
+			<div class="video-container">
+				<iframe src='http://www.streammonkey.com/iframe/H4oxkhT1' width='100%' height='100%' frameborder='0' allowfullscreen webkitAllowFullScreen mozAllowFullscreen></iframe>
+			</div>
+		</div>
+		<br><br>
+	</div>
+{% endif %}
 
 <section class="tagline-section img-section">
 	<div class="section-inner">
 		<div class="page">
-			<div><h3 class="date">January 15th-16th, 2016</h3></div>
+			<div><h3 class="date">January 13th - 14th, 2017</h3></div>
 			<br>
 			Stand together, Be transformed, Make a difference... Now
 			<div>
@@ -196,20 +210,20 @@ sponsorlevels:
     </div>
     <br><br>
 </div>
-<section class="people-section img-section">
-	<div class="section-inner">
-       	
-		<div class="page">
-		{% for person in page.speakers %}
-			<div class="person">
-				<img title="{{person.name}} - Bio Photo" alt="{{person.name}} - Bio Photo" src="img/people/{{person.img}}">
-				<span class="name">{{person.name}}</span>
-				<p class="bio">{{person.bio}} <br><a target="_blank" class="read-more" href="{{person.url}}">{{person.readmore}}</a></p>
-			</div>
-		{% endfor %}
-		</div>
-	</div>
-</section>
+<!--<section class="people-section img-section">-->
+	<!--<div class="section-inner">-->
+       	<!---->
+		<!--<div class="page">-->
+		<!--{% for person in page.speakers %}-->
+			<!--<div class="person">-->
+				<!--<img title="{{person.name}} - Bio Photo" alt="{{person.name}} - Bio Photo" src="img/people/{{person.img}}">-->
+				<!--<span class="name">{{person.name}}</span>-->
+				<!--<p class="bio">{{person.bio}} <br><a target="_blank" class="read-more" href="{{person.url}}">{{person.readmore}}</a></p>-->
+			<!--</div>-->
+		<!--{% endfor %}-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</section>-->
 <!-- <section class="video-wrap-outer">
 <br>
   <div class="section-inner register-section">
@@ -256,18 +270,18 @@ sponsorlevels:
 <section class="map-wrapper">
 	<a href="https://www.google.com/maps?daddr=Bayside+Church,+8191+Sierra+College+Blvd,+Roseville,+CA+95661&amp;sll=38.751292600000006,-121.2279627&amp;sspn=0.029051498257616628,0.06712392381494998&amp;t=m&amp;dg=opt&amp;z=15"><img class="map" src="img/map.svg"></a>
 </section>
-<section class="promo">
-	<div class="page">
-		<p class="sponsorship-opp">
-			<a class="thebutton" href="{{page.volunteer}}">Volunteer for 2016</a><br><br>
-			For sponsorship opportunities, contact <a href="mailto:info@thriveconference.com?subject=Thrive Unleashed 2016 Sponsorship">Us Here</a>.</p>
-		<!-- <h2 class="section-title">For Leaders</h2> -->
-		<p>
-			<!-- These are no longer relevant: <a href="img/Thrive_Unleashed_Promo.zip" class="button">Promo Resources</a> -->
-			<!-- These are no longer relevant: <a target="_blank" class="button" href="http://placertourism.com/event/2015ThriveUnleashed">Hotel Specials</a>-->
-		</p>
-	</div>
-</section>
+<!--<section class="promo">-->
+	<!--<div class="page">-->
+		<!--<p class="sponsorship-opp">-->
+			<!--<a class="thebutton" href="{{page.volunteer}}">Volunteer for 2016</a><br><br>-->
+			<!--For sponsorship opportunities, contact <a href="mailto:info@thriveconference.com?subject=Thrive Unleashed 2016 Sponsorship">Us Here</a>.</p>-->
+		<!--&lt;!&ndash; <h2 class="section-title">For Leaders</h2> &ndash;&gt;-->
+		<!--<p>-->
+			<!--&lt;!&ndash; These are no longer relevant: <a href="img/Thrive_Unleashed_Promo.zip" class="button">Promo Resources</a> &ndash;&gt;-->
+			<!--&lt;!&ndash; These are no longer relevant: <a target="_blank" class="button" href="http://placertourism.com/event/2015ThriveUnleashed">Hotel Specials</a>&ndash;&gt;-->
+		<!--</p>-->
+	<!--</div>-->
+<!--</section>-->
 <a class="footer-register" href="{{page.register}}">
 	<div class="page">
 		Register

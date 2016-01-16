@@ -115,7 +115,7 @@ button, a.button, input[type="submit"] {
 }
 
 .tagline-section {
-    background-image: url("../img/head-left.jpg");
+    background-image: url("../img/background-crosses.jpg");
     color: #fff;
     text-align: center;
     font-size: 2em;
@@ -129,7 +129,7 @@ button, a.button, input[type="submit"] {
 
 
     .section-inner {
-        background: rgba($primary-color, 0.9);
+        background: rgba(#69d2ed, 0.9);
         padding: 2em 0;
 
         .page {
@@ -139,15 +139,15 @@ button, a.button, input[type="submit"] {
 }
 
 .schedule-section {
-    background-image: url("../img/head-left.jpg");
+    background-image: url("../img/background-texture.jpg");
 
     @include media(max-width $mamabear) {
-        background-image: none !important;
+        //background-image: none !important;
     }
 
 
     .section-inner {
-        background: rgba($primary-color, 0.85);
+        //background: rgba($primary-color, 0.85);
         padding: 4em 0;
     }
 

@@ -78,15 +78,15 @@ header.header{
 
 .head-section{
 	
-	background-image: url('../img/sac.jpg');
+	background-image: url('../img/new-background.jpg');
 	
 	@include media(max-width $mamabear){
-		background-image: url('../img/head-rightpoint5x.jpg');
+		background-image: url('../img/new-background.jpg');
 		background-attachment: scroll;
 	}
 	
 	.section-inner{
-		background: rgba(black, 0.5);
+		background: rgba(black, 0.1);
 	}
 	
 	.youth-conf{
