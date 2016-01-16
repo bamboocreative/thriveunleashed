@@ -23,3 +23,12 @@ sass:
   style: :compressed
   
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
+prose:
+  metadata:
+    - name: "liveStream"
+      field:
+        element: checkbox
+        label: Live Stream On
+        help: Toggle live stream on or off
+        value: false
